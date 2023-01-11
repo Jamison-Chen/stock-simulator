@@ -1,0 +1,64 @@
+@media screen and (min-width: 700px) {
+    :root {
+        --chartHeight: 70vh;
+        --lowerPartHeight: 30vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    :root {
+        --chartHeight: 40vh;
+        --lowerPartHeight: 20vh;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+#chart-container {
+    height: fit-content;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 0;
+    justify-items: stretch;
+}
+
+.chart {
+    height: var(--chartHeight);
+}
+
+#lower-part {
+    height: calc(var(--lowerPartHeight) - 40px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+}
+
+#strategy-option-list {
+    background-color: #fff;
+    padding: 6px 15px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #444;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+#start-btn {
+    padding: 8px 20px;
+    margin-left: 20px;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #de5246;
+    text-align: center;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+#start-btn:active {
+    background-color: #c4463b;
+}

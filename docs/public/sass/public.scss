@@ -1,0 +1,81 @@
+@use "global_variables" as _;
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 2px;
+}
+
+::-webkit-scrollbar-track {
+    margin: 5px 0;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: _.$lightGray;
+}
+:root {
+    font-size: _.$baseFontSize;
+}
+
+html {
+    font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+    cursor: default;
+    user-select: none;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    overflow: hidden;
+}
+
+.button {
+    color: _.$bgc;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1 * _.$baseFontSize;
+    letter-spacing: 2px;
+    border: none;
+    opacity: 0.9;
+    cursor: pointer;
+    transition-duration: 200ms;
+    &:hover {
+        opacity: 1;
+    }
+    &.plain {
+        color: _.$gray;
+    }
+    &.plain-fill {
+        background-color: _.$lightGray;
+        color: _.$deepGray;
+    }
+    &.primary {
+        color: _.$blue;
+    }
+    &.primary-fill {
+        background-color: _.$blue;
+    }
+    &.success {
+        color: _.$green;
+    }
+    &.success-fill {
+        background-color: _.$green;
+    }
+    &.warning-fill {
+        background-color: _.$yellow;
+        color: _.$deepGray;
+    }
+    &.dangerous {
+        color: _.$red;
+    }
+    &.dangerous-fill {
+        background-color: _.$red;
+    }
+}

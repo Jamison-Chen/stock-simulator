@@ -1,0 +1,23 @@
+@use "../../sass/global_variables" as _;
+
+#header {
+    height: 40px;
+    width: 100%;
+    padding: 0 1%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: _.$bgc;
+    border-bottom: 0.5px solid _.$lightGray;
+    &.desktop {
+        justify-content: flex-end;
+        position: relative;
+    }
+    &.mobile {
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 500;
+    }
+}
