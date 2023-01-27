@@ -4,12 +4,10 @@
   "description": "",
   "main": "./docs/modules/script.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "watch-tsc": "tsc -w",
     "watch-sass": "sass --watch docs/basic/sass:docs/basic/css docs/public/sass:docs/public/css",
     "dev": "webpack --watch --mode development",
     "dev2": "concurrently 'npm:watch-*'",
-    "start": "",
     "build": "webpack --mode production"
   },
   "repository": {
@@ -22,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/Jamison-Chen/stock-simulator/issues"
   },
-  "homepage": "https://github.com/Jamison-Chen/stock-simulator#readme",
+  "homepage": "https://github.com/Jamison-Chen/stock-simulator",
   "devDependencies": {
     "concurrently": "^6.2.0",
     "css-loader": "^6.7.1",
